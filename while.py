@@ -18,10 +18,20 @@ print("The oven is ready!!")
 # numbers from the user until they enter 'q' to quit.
 # When they quit, print out the list of numbers,
 # the sum and the average of all of the numbers.
+numbers = []
 
 def total_and_average():
-    numbers = []
-    # Solution 2 here
+    total = sum(numbers)
+    average = total/(len(numbers))
+    print("Numbers: {}".format(numbers))
+    print("SUM: {}".format(total))
+    print("AVG: {}".format(average))
+
+while True:
+    num = input("Please provide a number or press 'q' to quit.   ")
+    if num == "q":
+        break
+    numbers.append(int(num))
 
 total_and_average()
 
