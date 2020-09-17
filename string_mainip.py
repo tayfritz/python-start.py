@@ -27,6 +27,9 @@ def add_strings():
 
 add_strings()
 
+# OR: 
+# xoxo = [xo, ox] * 4
+
 
 
 # Step 3:
@@ -38,3 +41,5 @@ while i < len(strings):
     checker_board.join("/n")
     print(checker_board)
     i += 1
+
+# OR "/n".join(xoxo)
