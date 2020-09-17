@@ -43,4 +43,13 @@ total_and_average()
 
 current = 1
 
-# Solution 3 here
+while current <= 100:
+    current += 1
+    if current >= 101:
+        break
+    if current % 3 and current % 5 == 0:
+        print("{} is divisible by 3 and 5.".format(current))
+    elif current % 3 == 0:
+        print("{} is divisible by 3.".format(current))
+    elif current % 5 == 0:
+        print("{} is divisible by 5.".format(current))
