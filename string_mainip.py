@@ -4,6 +4,8 @@
 # Both strings should alternate between the two characters.
 # You can use multiplication for this.
 
+string_one = "XO"*4
+string_two = "OX"*4
 
 # Step 2:
 # Make a list
@@ -12,6 +14,27 @@
 # Repeat until you have 8 items total in the list.
 # You can use multiplication for this, too.
 
+strings = []
+def add_strings():
+  strings.append(string_one)
+  strings.append(string_two)
+  strings.append(string_one) 
+  strings.append(string_two)
+  strings.append(string_one) 
+  strings.append(string_two)
+  strings.append(string_one) 
+  strings.append(string_two)
+
+add_strings()
+
+
 
 # Step 3:
 # Print out the list of strings, joined with newlines \n.
+
+i = 0
+while i < len(strings):
+    checker_board = strings[i]
+    checker_board.join("/n")
+    print(checker_board)
+    i += 1
